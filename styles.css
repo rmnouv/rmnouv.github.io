@@ -266,6 +266,8 @@ h3 {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   padding: 24px;
 }
 
@@ -291,9 +293,15 @@ h3 {
 
 .project-link {
   display: inline-flex;
+  align-self: flex-start;
   margin-top: 18px;
   color: var(--river);
   font-weight: 800;
+}
+
+.project-card .project-link {
+  margin-top: auto;
+  padding-top: 18px;
 }
 
 .project-card.featured .project-link {
