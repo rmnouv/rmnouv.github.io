@@ -289,6 +289,21 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.project-link {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--river);
+  font-weight: 800;
+}
+
+.project-card.featured .project-link {
+  color: #f6c59e;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 .education-section {
   background: var(--surface);
 }
