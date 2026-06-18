@@ -704,6 +704,45 @@ h3 {
   color: var(--muted);
 }
 
+.languages-section {
+  padding-top: clamp(40px, 7vw, 76px);
+  background: var(--paper);
+}
+
+.languages-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.55fr) minmax(280px, 1fr);
+  gap: clamp(24px, 6vw, 72px);
+  align-items: start;
+}
+
+.languages-inner h2 {
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+}
+
+.language-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.language-item {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.language-item h3,
+.language-item p {
+  margin: 0;
+}
+
+.language-item p {
+  color: var(--muted);
+}
+
 .contact-section {
   color: #fff;
   background: var(--night);
@@ -772,6 +811,7 @@ h3 {
 
   .intro-grid,
   .photography-inner,
+  .languages-inner,
   .timeline-item,
   .contact-inner {
     grid-template-columns: 1fr;
@@ -825,6 +865,11 @@ h3 {
 
   .button {
     width: 100%;
+  }
+
+  .language-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .timeline-content {
