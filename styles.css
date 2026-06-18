@@ -760,6 +760,11 @@ h3 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.contact-notice {
+  margin-top: 18px;
+  font-size: 0.92rem;
+}
+
 .contact-links {
   display: grid;
   gap: 12px;
