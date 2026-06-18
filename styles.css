@@ -134,7 +134,7 @@ h1,
 h2,
 h3,
 p {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -215,6 +215,12 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
   gap: clamp(28px, 7vw, 92px);
   align-items: start;
+}
+
+.intro-grid h2 {
+  max-width: 680px;
+  font-size: clamp(2.1rem, 4vw, 3.55rem);
+  line-height: 1.06;
 }
 
 .intro-grid p:last-child {
