@@ -30,6 +30,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+  transform: translateY(-3px);
 }
 
 .icon-sprite {
