@@ -87,6 +87,65 @@ a:hover {
   opacity: 1;
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 12;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-open .nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+.nav-open .nav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background: var(--night);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-open .nav a {
+  opacity: 0.88;
+}
+
+.nav-open .nav a:hover {
+  opacity: 1;
+}
+
 .hero {
   position: relative;
   min-height: 92svh;
@@ -804,6 +863,10 @@ h3 {
 
   .nav {
     display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 
   .hero {
