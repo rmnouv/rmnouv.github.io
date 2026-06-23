@@ -714,11 +714,12 @@ h3 {
   display: inline-flex;
   align-self: flex-start;
   margin-top: 6px;
+  color: var(--river);
   font-weight: 800;
 }
 
-.notebook-link.pending {
-  color: var(--muted);
+.notebook-link:hover {
+  text-decoration: underline;
 }
 
 .course-groups {
