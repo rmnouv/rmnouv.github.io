@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic and personal projects by Ratanakmuny NOUV, also known as rmnouv, across data science, machine learning, AI, applied mathematics, and software engineering.">
+  <meta name="author" content="Ratanakmuny NOUV">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rmnouv.github.io/projects.html">
+  <meta property="og:title" content="Projects | Ratanakmuny NOUV | rmnouv">
+  <meta property="og:description" content="Academic and personal projects by Ratanakmuny NOUV across data science, AI, applied mathematics, and software engineering.">
+  <meta property="og:url" content="https://rmnouv.github.io/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rmnouv.github.io/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Ratanakmuny NOUV | rmnouv">
+  <meta name="twitter:description" content="Academic and personal projects by Ratanakmuny NOUV.">
+  <meta name="twitter:image" content="https://rmnouv.github.io/profile.jpg">
+  <title>Projects | Ratanakmuny NOUV | rmnouv</title>
+  <link rel="icon" href="profile-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="profile-favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage">
+  <header class="site-header">
+    <a class="brand" href="index.html#top">Ratanakmuny NOUV</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#work">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#photography">Photography</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="section-inner">
+        <p class="section-kicker">Projects</p>
+        <h1>Academic and Personal Projects</h1>
+        <p>
+          A fuller archive of projects from my coursework, applied mathematics training,
+          machine learning practice, and personal software work. The homepage shows only
+          the pinned selection from this list.
+        </p>
+      </div>
+    </section>
+
+    <section class="section projects-page-section">
+      <div class="section-inner projects-stack">
+        <section class="project-group" aria-labelledby="personal-projects-heading">
+          <div class="section-heading compact-heading">
+            <p class="section-kicker">Personal Project</p>
+            <h2 id="personal-projects-heading">Personal Project</h2>
+          </div>
+          <div class="project-grid project-grid-page" data-project-list="personal"></div>
+        </section>
+
+        <section class="project-group" aria-labelledby="academic-projects-heading">
+          <div class="section-heading compact-heading">
+            <p class="section-kicker">Academic Projects</p>
+            <h2 id="academic-projects-heading">Academic Projects</h2>
+          </div>
+          <div class="project-grid project-grid-page" data-project-list="academic"></div>
+        </section>
+
+        <section class="project-group" aria-labelledby="innovation-projects-heading">
+          <div class="section-heading compact-heading">
+            <p class="section-kicker">Innovation</p>
+            <h2 id="innovation-projects-heading">Innovation</h2>
+          </div>
+          <article class="innovation-panel">
+            <p class="tag">Innovation | Entrepreneurship</p>
+            <h3>IMT Starter Challenge 2024</h3>
+            <p>
+              Developed an ICT-based startup concept for the small startup track,
+              combining product thinking, innovation framing, and entrepreneurship practice.
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="projects.js"></script>
+  <script src="projects-render.js"></script>
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.nav');
+    toggle.addEventListener('click', function () {
+      var open = document.body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.body.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>

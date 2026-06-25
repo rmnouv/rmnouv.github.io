@@ -109,7 +109,7 @@
     <a class="brand" href="#top">Ratanakmuny NOUV</a>
     <nav class="nav" aria-label="Main navigation">
       <a href="#work">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#photography">Photography</a>
@@ -214,60 +214,10 @@
       <div class="section-inner">
         <div class="section-heading">
           <p class="section-kicker">Selected Projects</p>
-          <h2>Research, Models, and Applied Systems</h2>
+          <h2>Featured Projects</h2>
+          <a class="section-action" href="projects.html">View all projects</a>
         </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <p class="tag">Python | LangChain | FastAPI</p>
-            <h3>Research Paper Assistant</h3>
-            <p>
-              Retrieval-augmented question answering over research papers with sentence-transformer
-              embeddings, ChromaDB, FastAPI, Docker, and citation-aware LLM responses.
-            </p>
-            <a class="project-link" href="https://github.com/rmnouv/Research-Paper-Assistant-Project" target="_blank" rel="noreferrer">View repository</a>
-          </article>
-          <article class="project-card">
-            <p class="tag">Python</p>
-            <h3>ICA and EM-ICA Extension</h3>
-            <p>
-              Implemented four ICA algorithms and proposed an EM-ICA variant using Gaussian
-              mixture score estimation, evaluated across audio, image, and real photograph data.
-            </p>
-            <a class="project-link" href="https://github.com/rmnouv/M2DimensionReduction" target="_blank" rel="noreferrer">View repository</a>
-          </article>
-          <article class="project-card">
-            <p class="tag">Python | Quant Finance</p>
-            <h3>Gaussian Process Regression for Market Risk</h3>
-            <p>
-              Reproduced and extended a surrogate pricing engine using Gaussian processes and
-              co-kriging for VaR and expected shortfall computation.
-            </p>
-          </article>
-          <article class="project-card">
-            <p class="tag">R | Rcpp</p>
-            <h3>Bayesian Network Structure Learning</h3>
-            <p>
-              Compared hill-climbing, tabu search, and branch-and-bound methods with BIC scoring,
-              covering continuous and discrete node cases with runtime optimization in Rcpp.
-            </p>
-          </article>
-          <article class="project-card">
-            <p class="tag">R</p>
-            <h3>Survival Analysis on METABRIC</h3>
-            <p>
-              Modeled oncology prognosis with Kaplan-Meier curves, Cox proportional hazards, and
-              random survival forests evaluated with C-index and Brier score.
-            </p>
-          </article>
-          <article class="project-card">
-            <p class="tag">Python</p>
-            <h3>Single-Cell RNA-Seq Classification</h3>
-            <p>
-              Built supervised classification pipelines for sparse gene-expression data using PCA,
-              TF-IDF-style transformations, LightGBM, and RAMP server tracking.
-            </p>
-          </article>
-        </div>
+        <div class="project-grid" data-project-list="pinned"></div>
       </div>
     </section>
 
@@ -456,6 +406,8 @@
       </div>
     </section>
   </main>
+  <script src="projects.js"></script>
+  <script src="projects-render.js"></script>
   <script>
     var toggle = document.querySelector('.nav-toggle');
     var nav = document.querySelector('.nav');
